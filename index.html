@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Vuu</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!--
+        MUSIC PLAYER #02 by glenthemes
+        ♬ glenthpvs.tumblr.com/player02
+--->
+<script src="//cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
+<link href="//fonts.googleapis.com/css?family=Readex+Pro" rel="stylesheet">
+<link href="//glenthemes.github.io/-music-/glenplayer02.css" rel="stylesheet">
+<script src="//glenthemes.github.io/-music-/glenplayer02.js"></script>
+<style element="glenplayer02">
+:root {
+    --MusicPlayer-Position:bottom left;
+    --MusicPlayer-Edge-Offset:18px;
+    
+    --MusicPlayer-Buttons-Size:14px;
+    --MusicPlayer-Buttons-Color:#60656c;
+    --MusicPlayer-Buttons-Fill:no;
+    
+    --MusicPlayer-Note-Size:11px;
+    --MusicPlayer-Note-Color:#60656c;
+    
+    --MusicPlayer-Spacing-1:7px;
+    --MusicPlayer-Spacing-2:9px;
+    
+    --MusicPlayer-Text-Size:9px;
+    --MusicPlayer-Text-Color:#60656c;
+}
+</style>
+
+<div glenplayer02>
+    <div controls></div>
+    
+    <i class="aa-line-icons" icon-name="music-2"></i>
+    
+    <!-- SONG NAME HERE -->
+    案山子
+    
+    <!-- HOW TO CHANGE THE MUSIC -->
+    <!-- linktr.ee/direct_file_links -->
+    <audio src="https://github.com/Hyakui/musicc/raw/main/y2mate.com%20-%20Let%20Me%20Be%20Sad.mp3" volume="100%"></audio>
+    
+</div><!--don't delete this line-->
+<!--end music player-->
+    
+
+<meta name="color:background" content="#fafafa">
+<meta name="color:scrollbar bg" content="#e0e0e0">
+<meta name="color:scrollbar" content="#878787">
+<meta name="color:text highlight" content="#ffffff">
+<meta name="color:text highlight bg" content="#595959">
+
+<meta name="color:desc text" content="#8a8a8a" />
+<meta name="color:desc links" content="#b63030" />
+<meta name="color:desc links hover" content="#d1d3d0" />
+<meta name="color:desc bold" content="#612626" />
+<meta name="color:desc italic" content="#e4e4e4" />
+
+<meta name="color:sidebar image border" content="#cccccc">
+<meta name="color:sidebar crown" content="#cccccc">
+
+<meta name="color:title background" content="#ffffff">
+<meta name="color:title colour" content="#cccccc">
+<meta name="color:title border" content="#efefef">
+
+<meta name="color:nav index circle" content="#e3e3e3">
+<meta name="color:nav ask circle" content="#989898">
+<meta name="color:nav past circle" content="#434343">
+<meta name="color:nav circle hover" content="#cccccc">
+<meta name="color:nav text" content="#535353">
+<meta name="color:nav bg" content="#ffffff">
+
+<meta name="color:explore background" content="#f7f7f7">
+<meta name="color:explore text" content="#828282">
+<meta name="color:explore underline" content="#cccccc">
+
+<meta name="color:custom links bg" content="#f0f0f0">
+<meta name="color:custom links text" content="#999999">
+<meta name="color:custom links hover bg" content="#ffffff">
+<meta name="color:custom links hover text" content="#cccccc">
+
+<meta name="color:pagination text" content="#888888">
+<meta name="color:pagination links" content="#aaaaaa">
+<meta name="color:pagination links hover" content="#aaaaaa">
+
+<meta name="color:body" content="#838383">
+<meta name="color:body links" content="#892020">
+<meta name="color:body links hover" content="#ffffff">
+<meta name="color:body links hover bg" content="#cecece">
+<meta name="color:body bold" content="#494949">
+<meta name="color:body italic" content="#bdbdbd">
+<meta name="color:post background" content="#ffffff">
+<meta name="color:post border" content="#ebebeb">
+<meta name="color:blockquote" content="#aca8a8">
+ 
+<meta name="color:post title underline" content="#bebebe">
+<meta name="color:post title" content="#535353">
+<meta name="color:post title bg" content="#ffffff">
+<meta name="color:post link hover" content="#707070">
+<meta name="color:post link hover bg" content="#f1f1f1">
+<meta name="color:post link hover underline" content="#757575">
+<meta name="color:post quote" content="#afaeae">
+
+<meta name="color:perma notes" content="#cdcdcd" />
+<meta name="color:perma time" content="#9f9f9f" />
+<meta name="color:perma reblog" content="#3d3d3d" />
+<meta name="color:perma tags" content="#9b9c9c" />
+<meta name="color:perma tags hover" content="#ffffff" />
+<meta name="color:perma tags hover bg" content="#bdbdbd" />
+<meta name="color:perma page text" content="#c2c1c1">
+
+<meta name="color:permalink text" content="#0f0f0f">
+<meta name="color:permalink links" content="#c0bfbe">
+<meta name="color:permalink links hover" content="#383838">
+ 
+<meta name="color:ask text" content="#646464" />
+<meta name="color:ask borders" content="#eeeff0" />
+<meta name="color:asker link" content="#da7b7b">
+ 
+<meta name="color:chat even name" content="#d2d2d2" />
+<meta name="color:chat even background" content="#ffffff" />
+<meta name="color:chat even text" content="#a5a4a4" />
+<meta name="color:chat odd name" content="#5a5a5a" />
+<meta name="color:chat odd background" content="#f7f7f7" />
+<meta name="color:chat odd text" content="#000000" />
+
+<meta name="image:background" content="">
+<meta name="image:sidebar" content="">
+
+<meta name="if:1 column" content="1">
+<meta name="if:2 columns" content="0">
+<meta name="if:3 columns" content="0">
+<meta name="if:post size 1" content="1">
+<meta name="if:post size 2" content="0">
+<meta name="if:post size 3" content="0">
+<meta name="if:infinite scroll" content="0">
+<meta name="if:show captions" content="1">
+<meta name="if:fading photos" content="1">
+<meta name="if:monochrome posts" content="1">
+
+<meta name="text:link 1" content="">
+<meta name="text:link 1 URL" content="">
+<meta name="text:link 2" content="">
+<meta name="text:link 2 URL" content="">
+<meta name="text:link 3" content="">
+<meta name="text:link 3 URL" content="">
+<meta name="text:link 4" content="">
+<meta name="text:link 4 URL" content="">
+<meta name="text:link 5" content="">
+<meta name="text:link 5 URL" content="">
+<meta name="text:link 6" content="">
+<meta name="text:link 6 URL" content="">
+<meta name="text:link 7" content="">
+<meta name="text:link 7 URL" content="">
+<meta name="text:link 8" content="">
+<meta name="text:link 8 URL" content="">
+
+<title>Loyal Servant, swearto:
+ Graphic request meme ➛ Pandora Hearts
+ ...</title>
+<meta name="description" content="swearto: &ldquo;&ldquo; Graphic request meme ➛ Pandora Hearts 14. Favorite Elleoz scene // Alt. tea party &rdquo; &rdquo;" />
+<style>figure{margin:0}.tmblr-iframe{position:absolute}.tmblr-iframe.hide{display:none}.tmblr-iframe--amp-cta-button{visibility:hidden;position:fixed;bottom:10px;left:50%;transform:translateX(-50%);z-index:100}.tmblr-iframe--amp-cta-button.tmblr-iframe--loaded{visibility:visible;animation:iframe-app-cta-transition .2s ease-out}</style><link rel="stylesheet" media="screen" href="https://assets.tumblr.com/client/prod/standalone/blog-network-npf/index.build.css?_v=c451b85cf126275a22cf7ca62ddacdc0"><link rel="shortcut icon" href="https://64.media.tumblr.com/avatar_ec36d0cc5ed6_128.pnj" />
+
+<style type="text/css">
+
+iframe#tumblr_controls { white-space:nowrap; -webkit-filter: invert(100%); -moz-filter: invert(100%); -o-filter: invert(100%); -ms-filter: invert(100%); filter: invert(100%); opacity:0.9; }
+
+::-webkit-scrollbar { width: 5px; }
+ 
+::-webkit-scrollbar-track-piece {background-color:#e0e0e0; }
+
+::-webkit-scrollbar-thumb:vertical {
+    width: 10px;
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -o-border-radius: 100px;
+    background-color: #878787;
+}
+
+::selection {
+background: #595959;
+color:#ffffff;
+}
+ 
+::-moz-selection {
+background: #595959;
+color:#ffffff;
+}
+
+body {
+      background: linear-gradient(to bottom, #fafafa, #fafafa);
+    margin: 0;
+    word-wrap: break-word;
+}
+a { text-decoration:none; }
+
+#image {
+    width: 120px;
+    height: 120px;
+    opacity: 1;
+    display: block;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    background-color: #fafafa;
+    background-image: url(https://assets.tumblr.com/images/x.gif?v=1);
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+#side {
+    position: fixed;
+    width: 160px;
+    padding: 10px;
+    top: 150px;
+    left: 60px;
+}
+
+.crown {
+    z-index: 1;
+    position: absolute;
+    font-size: 40px;
+    color: #cccccc;
+    transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    margin: -20px 2px;
+    background-color: #fafafa;
+    background-image: url(https://assets.tumblr.com/images/x.gif?v=1);
+    width: 30px;
+    height: 40px;
+    padding-right: 10px;
+}
+
+.bt {
+    background-color: #ffffff;
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -o-border-radius: 100px;
+    border: 0 solid transparent;
+    text-align: center;
+    font-family: consolas;
+    color: #cccccc;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 1;
+    margin: 20px;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    padding: 0;
+    font-size: 0;
+    margin: 70px;
+    letter-spacing: 1px;
+    transition: 0.6s;
+    -moz-transition: 0.6s;
+    webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+#ta:hover .bt {
+    margin: 20px;
+    font-size: 8px;
+    width: 92px;
+    height: 58px;
+    border: 5px solid ;
+    padding-top: 35px;
+    opacity: 0.9;
+}
+
+.c1, .c2, .c3 {
+    z-index: 2;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #e3e3e3;
+    border-radius: 20px;
+    margin: -60px 0 0 133px;
+    transition: 0.8s;
+    -moz-transition: 0.8s;
+    webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+}
+.c2 {
+    background-color: #989898;
+    margin: -40px 0 0 125px;
+}
+.c3 {
+    background-color: #434343;
+    margin: -22px 0 0 110px;
+}
+
+.c1:hover, .c2:hover, .c3:hover {
+    background-color: #cccccc;
+}
+
+.desc {
+    width: 140px;
+    text-align: justify;
+    font-family: consolas;
+    color: #8a8a8a;
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.desc a {color: #b63030;}
+.desc a:hover {color: #d1d3d0;}
+.desc b,strong { color: #612626;}
+.desc i,em { color: #e4e4e4;}
+
+.cthrough {
+    font-family: consolas;
+    font-size: 8px;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #f7f7f7;
+    color: #828282;
+    width: 140px;
+    padding: 1px 10px 1px 85px;
+    margin-top: 10px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.sub {margin-bottom:10px;}
+
+.link {
+    text-align: center;
+    padding: 1px 0;
+    width: 68px;
+    float: left;
+    margin-right: 5px;
+    margin-top: 5px;
+    font-family: consolas;
+    font-size: 8px;
+    text-transform: uppercase;
+    background-color: #f0f0f0;
+    color: #999999;
+    transition: 0.6s;
+    -moz-transition: 0.6s;
+    webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+.link:hover {
+    background-color: #ffffff;
+    color: #cccccc;
+}
+
+.navt1, .navt2, .navt3 {
+    position: absolute;
+    font-family: consolas;
+    font-size: 8px;
+    letter-spacing: 1px;
+    background-color: #ffffff;
+    color: #535353;
+    text-transform: uppercase;
+    margin: -45px 57px;
+    padding: 3px 5px;
+    opacity: 0;
+    transition: 0.8s;
+    -moz-transition: 0.8s;
+    webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+}
+.navt2 {margin: -45px 50px;}
+.navt3 {margin: -45px 47px;}
+
+#nav1:hover .navt1, #nav2:hover .navt2, #nav3:hover .navt3 { opacity: 1; }
+
+.cov {
+    z-index: -1;
+    width: 122px;
+    height: 122px;
+    border-radius: 100px;
+    background-color: #fff;
+    position: absolute;
+    margin: -132px 10px;
+    opacity: 0;
+    transition: 0.8s;
+    -moz-transition: 0.8s;
+    webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+}
+
+#nav1:hover .cov, #nav2:hover .cov, #nav3:hover .cov { opacity: 0.4; z-index: 2; }
+
+#content {
+    margin-left: 270px;
+    margin-top: 20px;
+    
+    width: 570px;
+    
+    
+    
+    
+    
+}
+ 
+.posts {
+    width: 500px;
+    
+    
+    padding: 10px;
+    
+    padding: 10px;
+    border: 1px solid #ebebeb;
+    margin: 0 10px 10px 0;
+    background-color: #ffffff;
+    float: left;
+}
+ 
+.posts img {
+    
+    max-width: 500px;
+    
+    
+    
+    
+   
+    
+    
+    max-width: 500px;
+    
+    
+    
+    
+    
+}
+.posts blockquote img {max-width: 100%;}
+ 
+.photo {
+    
+    
+    width: 500px;
+    
+    
+    
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+    opacity: 0.6;
+    
+    
+filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+filter: gray; /* IE6-9 */
+-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+
+    transition: 0.8s;
+    -moz-transition: 0.8s;
+    webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+}
+
+.posts:hover .photo { 
+    opacity: 1;
+    
+    filter: none;
+    -webkit-filter: grayscale(0%);  
+    
+}
+
+blockquote {
+    border-left: 3px solid #f0eeee;
+    margin: 5px;
+    padding: 0 10px;
+}
+ 
+.title, .ltitle {
+    font-family: georgia;
+    font-size: 14px;
+    border-bottom: 1px dashed #bebebe;
+    color: #535353;
+    padding: 2px 0 2px 20px;
+    background-color: #ffffff;
+-webkit-transition: all 0.4s ease-in-out;
+-moz-transition: all 0.4s ease-in-out;
+-o-transition: all 0.4s ease-in-out;
+-ms-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out;
+}
+ 
+.ltitle:hover {
+    font-family: georgia;
+    border-bottom: 1px dashed #757575;
+    color: #707070;
+    padding: 2px 0 2px 40px;
+    background-color: #f1f1f1;
+}  
+.quote {
+    font-family: consolas;
+    font-size: 12px;
+    color: #afaeae;
+    text-align: right;
+}
+.qsource {
+    text-align: right;
+    font-family: consolas;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #838383;
+}
+ 
+.odd .line {background-color: #f7f7f7;padding: 3px 5px;color:#000000;}
+.even .line {background-color: #ffffff;padding: 3px 5px;color:#a5a4a4;}
+.odd .name {color: #5a5a5a;padding: 3px 5px;}
+.even .name {color: #d2d2d2;padding: 3px 5px;}
+ 
+.askerportrait {
+    position: absolute;
+    border: 10px solid #eeeff0;    
+    
+filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+filter: gray; /* IE6-9 */
+-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    
+    transition: 0.8s;
+    -moz-transition: 0.8s;
+    webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+}
+.posts:hover .askerportrait { 
+    
+    filter: none;
+    -webkit-filter: grayscale(0%);  
+    
+}
+.a {
+    min-height: 84px;
+    font-family: consolas;
+    font-size: 10px;
+    margin: 0 0 0 74px;
+    padding-left: 12px;
+    color: #646464;
+}
+.asker {
+    margin: 0 0 10px -10px;
+    padding-left: 30px;
+    padding-top: 5px;
+    color: ;
+    border-bottom: 1px solid #eeeff0;
+    width:396px;
+    
+    
+    font-family: consolas;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: ;
+}
+.asker a {color: #da7b7b;}
+-webkit-transition: all 0.4s ease-in-out;
+-moz-transition: all 0.4s ease-in-out;
+-o-transition: all 0.4s ease-in-out;
+-ms-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out;}
+.asker a:hover {color:;}
+
+.q {
+    padding-left: 10px;
+    width:406px;
+    
+    
+}
+ 
+#album {
+    width: 150px;
+    height: 150px;
+    background-color: #D6D6D6;
+    overflow: hidden;
+    
+}
+.noalbum {
+    width: 150px;
+    height: 150px;
+    background-color: #D6D6D6;
+    z-index: 50;
+    
+}
+.albumart {
+    width: 150px;
+    height: 150px;
+    z-index: 50;
+              
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    
+    transition: 0.8s;
+    -moz-transition: 0.8s;
+    webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+}
+.posts:hover .albumart { 
+    
+    filter: none;
+    -webkit-filter: grayscale(0%);  
+    
+}
+.aud {
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    opacity: 0.6;
+    overflow: hidden;
+    margin: 60px 0 0 60px;
+    position: absolute;
+    z-index: 1;
+    
+-webkit-transition: all 0.4s ease-in-out;
+-moz-transition: all 0.4s ease-in-out;
+-o-transition: all 0.4s ease-in-out;
+-ms-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out;
+}
+.aud:hover {opacity: 1;}
+.info {
+    padding: 5px 5px 5px 15px;
+    color: #838383;
+    text-transform: uppercase;
+    font-family: consolas;
+    font-size: 10px;
+    height: auto;
+    width: 320px;
+    border-bottom: 1px solid #bdbdbd;
+    
+    
+}
+.info b,strong {color: #494949;}
+.information {
+    margin: 25px 0 0 150px;
+    position: absolute;
+    border-top: 1px solid #bdbdbd;
+    
+}
+ 
+
+#permalink {
+    position: absolute;
+    font-family: consolas;
+    font-size: 9px;
+    width: 200px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0;
+    margin: 5px 500px;
+    
+    
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+.posts:hover #permalink {
+    margin: 5px 520px;
+    
+    
+    opacity: 1;
+}
+.pnotes, .ptime, .pre {
+    color: #cdcdcd;
+    border-left: 10px solid #cdcdcd;
+    padding-left: 10px;
+    -webkit-transition: all 0.4s ease-in-out;-moz-transition: all 0.4s ease-in-out;-o-transition: all 0.4s ease-in-out;transition: all 0.4s ease-in-out;}
+.ptime {
+    color: #9f9f9f;
+    border-left: 10px solid #9f9f9f;
+    margin: 3px 0;
+}
+.pre {
+    color: #3d3d3d;
+    border-left: 10px solid #3d3d3d;
+}
+
+.pnotes:hover, .ptime:hover, .pre:hover { border-left-width: 20px; -webkit-transition: all 0.4s ease-in-out;-moz-transition: all 0.4s ease-in-out;-o-transition: all 0.4s ease-in-out;transition: all 0.4s ease-in-out;}
+.taggu {margin: 5px;color: #9b9c9c; width: 200px;}
+.taggu a {color: #9b9c9c;-webkit-transition: all 0.4s ease-in-out;-moz-transition: all 0.4s ease-in-out;-o-transition: all 0.4s ease-in-out;transition: all 0.4s ease-in-out;}
+.taggu a:hover {color: #ffffff;background-color:#bdbdbd;}
+ 
+.tags {
+    font-size: 10px;
+    letter-spacing:1px;}
+.tags a, #permapg a {color:#9b9c9c;padding-left: 5px;
+-webkit-transition: all 0.4s ease-in-out;
+-moz-transition: all 0.4s ease-in-out;
+-o-transition: all 0.4s ease-in-out;
+-ms-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out;
+}
+.tags a:hover, #permapg a:hover {color:#ffffff;background-color:#bdbdbd;}
+
+
+
+ 
+#permapg {
+    font-family: consolas;
+    text-align: center;
+    color: #c2c1c1;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+ 
+#notecontainer {
+    padding: 10px;
+    text-decoration: none;
+    
+    
+    
+}
+ol.notes {
+    list-style-type: none;
+    letter-spacing: -1px;
+    font-size: 11px;
+    color: #838383;
+    font-family: consolas;
+    text-decoration: none;
+    margin: 0;
+    
+    
+    
+    padding: 5px;
+    text-align: left;
+}
+ol.notes a {color: #892020;
+-webkit-transition: all 0.4s ease-in-out;
+-moz-transition: all 0.4s ease-in-out;
+-o-transition: all 0.4s ease-in-out;
+-ms-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out;}
+ol.notes a:hover {color: #ffffff;}
+img.avatar {
+    margin-right: 5px;
+    width: 10px;
+    height: 10px;
+    float: left;
+}
+ 
+.text {
+    font-family: calibri;
+    font-size: 11px;
+    color: #838383;
+    text-align: justify;
+}
+.text b,strong {color:#494949;font-size:11px;}
+.text i,em { color: #bdbdbd; }
+.text a {color: #892020;font-size:11px;
+-webkit-transition: all 0.4s ease-in-out;
+-moz-transition: all 0.4s ease-in-out;
+-o-transition: all 0.4s ease-in-out;
+-ms-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out;
+}
+
+.pagi {
+    font-family: consolas;
+    font-size: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    text-align: center;
+    width: 140px;
+    color: #888888;
+}
+
+.pagi a { color: #aaaaaa; }
+.pagi a:hover { color: #aaaaaa; }
+
+.qsource a {color: #892020;
+-webkit-transition: all 0.4s ease-in-out;
+-moz-transition: all 0.4s ease-in-out;
+-o-transition: all 0.4s ease-in-out;
+-ms-transition: all 0.4s ease-in-out;
+transition: all 0.4s ease-in-out;}
+.text a:hover, .qsource a:hover {color:#ffffff;background-color:#cecece;}
+
+#credit {
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;right: 5px;
+    transition: 0.6s;
+    -moz-transition: 0.6s;
+    webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+.credimg {width: 35px;margin: 5px;}
+
+.credt a {
+    font-family: georgia;
+    font-size: 10px;
+    color: #8a8a8a;
+    position: absolute;
+    width: 50px;
+    text-align: center;
+    margin-left: -5px;
+}
+#credit:hover { bottom: 40px; }
+
+#wa2, #wa1, #wa3 {
+    position: fixed;
+    top: 0;left: 0;
+    width: 100%;height: 100%;
+    background-color: #000;
+    color: #fff;
+    font-family: georgia;
+    font-size: 14px;
+    padding-top: 270px;
+    text-align: center;
+    opacity: 0;
+    z-index: -10000;
+    
+    
+    
+    
+    
+    
+    
+}
+
+#wa1 {
+    
+    
+    
+    
+    
+    
+    
+}
+
+#wa3 {
+    
+    
+    
+    
+    
+}
+
+.pagination { display: none; }
+
+ 
+
+</style>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+
+
+<link rel="alternate" href="android-app://com.tumblr/tumblr/x-callback-url/blog?blogName=tragedysorchestrator%26postID=187767792486" /><link rel="alternate" href="ios-app://305343404/tumblr/x-callback-url/blog?blogName=tragedysorchestrator&postID=187767792486" /><link rel="alternate" type="application/json+oembed" href="https://www.tumblr.com/oembed/1.0?url=https://tragedysorchestrator.tumblr.com/post/187767792486/swearto-graphic-request-meme-pandora-hearts" title="swearto:
+&ldquo;&ldquo; Graphic request meme ➛ Pandora Hearts
+14. Favorite Elleoz scene // Alt. tea party
+&rdquo; &rdquo;"/><link rel="amphtml" href=https://tragedysorchestrator.tumblr.com/post/187767792486/swearto-graphic-request-meme-pandora-hearts/amp /><script
+    defer
+    type="application/javascript"
+    id="bilmur"
+    data-provider="tumblr.com"
+    data-service="blognetwork"
+    data-customproperties='{"theme": ""}'
+    nonce="khxknM8aVSodue8uKQbdKrRjx8"
+    src="https://s0.wp.com/wp-content/js/bilmur.min.js?m=202314"
+  ></script><script src="https://assets.tumblr.com/assets/scripts/tumblelog_post_message_queue.js?_v=a8fadfa499d8cb7c3f8eefdf0b1adfdd"></script><link rel="stylesheet" type="text/css" href="https://assets.tumblr.com/fonts/gibson/stylesheet.css?v=3"><meta name="keywords" content="pandora hearts" /><!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. --><!-- Read more: http://ogp.me/ --><meta property="fb:app_id" content="48119224995" /><meta property="og:site_name" content="Tumblr" /><meta property="og:title" content="Loyal Servant" /><meta property="og:description" content="Graphic request meme ➛ Pandora Hearts
+&nbsp; 14. Favorite Elleoz scene // Alt. tea party" /><meta property="og:url" content="https://tragedysorchestrator.tumblr.com/post/187767792486/swearto-graphic-request-meme-pandora-hearts" /><meta property="og:type" content="article" /><meta property="og:image" content="https://64.media.tumblr.com/02cdfed069c57f94a98147e32e7fa5c5/tumblr_pahu98EDMu1x6uh6so1_400.png" /><meta property="og:image:secure_url" content="https://64.media.tumblr.com/02cdfed069c57f94a98147e32e7fa5c5/tumblr_pahu98EDMu1x6uh6so1_400.png" /><meta property="og:image:type" content="image/png" /><meta property="og:image:width" content="300" /><meta property="og:image:height" content="321" /><meta property="og:image" content="https://64.media.tumblr.com/996f395a2c4d76db4451024f578b35ab/tumblr_pahu98EDMu1x6uh6so2_400.png" /><meta property="og:image:secure_url" content="https://64.media.tumblr.com/996f395a2c4d76db4451024f578b35ab/tumblr_pahu98EDMu1x6uh6so2_400.png" /><meta property="og:image:type" content="image/png" /><meta property="og:image:width" content="300" /><meta property="og:image:height" content="321" /><meta property="og:image" content="https://64.media.tumblr.com/6eb538076c07530c7bb96dc23e758072/tumblr_pahu98EDMu1x6uh6so3_400.png" /><meta property="og:image:secure_url" content="https://64.media.tumblr.com/6eb538076c07530c7bb96dc23e758072/tumblr_pahu98EDMu1x6uh6so3_400.png" /><meta property="og:image:type" content="image/png" /><meta property="og:image:width" content="300" /><meta property="og:image:height" content="321" /><meta property="og:image" content="https://64.media.tumblr.com/6c0dd0e76519177a323a12d2e720c354/tumblr_pahu98EDMu1x6uh6so4_400.png" /><meta property="og:image:secure_url" content="https://64.media.tumblr.com/6c0dd0e76519177a323a12d2e720c354/tumblr_pahu98EDMu1x6uh6so4_400.png" /><meta property="og:image:type" content="image/png" /><meta property="og:image:width" content="300" /><meta property="og:image:height" content="321" /><meta property="og:image" content="https://64.media.tumblr.com/4e51bd94472e6e2d18c41b83d8371417/tumblr_pahu98EDMu1x6uh6so5_400.png" /><meta property="og:image:secure_url" content="https://64.media.tumblr.com/4e51bd94472e6e2d18c41b83d8371417/tumblr_pahu98EDMu1x6uh6so5_400.png" /><meta property="og:image:type" content="image/png" /><meta property="og:image:width" content="300" /><meta property="og:image:height" content="321" /><meta property="al:ios:url" content="tumblr://x-callback-url/blog?blogName=tragedysorchestrator&amp;postID=187767792486" /><meta property="al:ios:app_name" content="Tumblr" /><meta property="al:ios:app_store_id" content="305343404" /><meta property="al:android:url" content="tumblr://x-callback-url/blog?blogName=tragedysorchestrator&amp;postID=187767792486" /><meta property="al:android:app_name" content="Tumblr" /><meta property="al:android:package" content="com.tumblr" /><!-- END TUMBLR FACEBOOK OPENGRAPH TAGS --><!-- TWITTER TAGS --><meta charset="utf-8"><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="tragedysorchestrator" /><meta name="twitter:description" content="swearto: &ldquo;&ldquo; Graphic request meme ➛ Pandora Hearts 14. Favorite Elleoz scene // Alt. tea party &rdquo; &rdquo;" /><meta name="twitter:image" content="https://64.media.tumblr.com/02cdfed069c57f94a98147e32e7fa5c5/tumblr_pahu98EDMu1x6uh6so1_400.png" /><meta name="twitter:url" content="https://tragedysorchestrator.tumblr.com/post/187767792486/swearto-graphic-request-meme-pandora-hearts" /><meta name="twitter:site" content="tumblr" /><meta name="twitter:app:name:iphone" content="Tumblr" /><meta name="twitter:app:name:ipad" content="Tumblr" /><meta name="twitter:app:name:googleplay" content="Tumblr" /><meta name="twitter:app:id:iphone" content="305343404" /><meta name="twitter:app:id:ipad" content="305343404" /><meta name="twitter:app:id:googleplay" content="com.tumblr" /><meta name="twitter:app:url:iphone" content="tumblr://x-callback-url/blog?blogName=tragedysorchestrator&amp;postID=187767792486&amp;referrer=twitter-cards" /><meta name="twitter:app:url:ipad" content="tumblr://x-callback-url/blog?blogName=tragedysorchestrator&amp;postID=187767792486&amp;referrer=twitter-cards" /><meta name="twitter:app:url:googleplay" content="tumblr://x-callback-url/blog?blogName=tragedysorchestrator&amp;postID=187767792486&amp;referrer=twitter-cards" /><!-- GOOGLE CAROUSEL --><script type="application/ld+json">
+	{"@type":"SocialMediaPosting","url":"https:\/\/tragedysorchestrator.tumblr.com\/post\/187767792486\/swearto-graphic-request-meme-pandora-hearts","mainEntityOfPage":true,"datePublished":"2019-09-17T01:38:12+00:00","author":"tragedysorchestrator","image":{"@list":["https:\/\/64.media.tumblr.com\/02cdfed069c57f94a98147e32e7fa5c5\/tumblr_pahu98EDMu1x6uh6so1_400.png","https:\/\/64.media.tumblr.com\/996f395a2c4d76db4451024f578b35ab\/tumblr_pahu98EDMu1x6uh6so2_400.png","https:\/\/64.media.tumblr.com\/6eb538076c07530c7bb96dc23e758072\/tumblr_pahu98EDMu1x6uh6so3_400.png","https:\/\/64.media.tumblr.com\/6c0dd0e76519177a323a12d2e720c354\/tumblr_pahu98EDMu1x6uh6so4_400.png","https:\/\/64.media.tumblr.com\/4e51bd94472e6e2d18c41b83d8371417\/tumblr_pahu98EDMu1x6uh6so5_400.png","https:\/\/64.media.tumblr.com\/9b50509c696b665a35798051adbd3ed7\/tumblr_pahu98EDMu1x6uh6so6_400.png"]},"articleBody":"swearto:\n\u201c\u201c Graphic request meme \u279b Pandora Hearts\n14. Favorite Elleoz scene \/\/ Alt. tea party\n\u201d \u201d","@context":"http:\/\/schema.org"}</script><link rel="canonical" href="https://swearto.tumblr.com/post/174992744951/graphic-request-meme-pandora-hearts-14" /></head>
+<body>
+
+<div id="wa1">please pick only one column</div>
+<div id="wa2">please pick only one post size</div>
+<div id="wa3">option not available. :x please pick something else.</div>
+
+<div id="credit">
+    
+<a href="http://xat.me/LastWhispers"><img class="credimg" src="http://media.tumblr.com/f8f9bfae919630113bb6f524d7658fb3/tumblr_inline_muenoomNw41qdlkyg.gif"></a>
+<div class="credt"><a href="http://xat.me/LastWhispers">what are u doin here</a></div>
+    
+</div><!--credit-->
+
+<div id="side">
+<div class="crown">♛</div>
+<div id="ta">
+<div class="bt">Last Whispers</div>
+<img id="image" src="https://static.tumblr.com/6c419e4a7c5beda4f4e11c944a09ecb1/aq3fko5/rYdnztjtd/tumblr_static_3bdz4gkynx2ck00088gogwsc4.jpg">
+</div><!--ta-->
+
+<div id="nav1"><div class="cov"></div><div class="navt1">index</div><a href="http://url.com"><div class="c1"></div></a></div><!--nav1-->
+<div id="nav2"><div class="cov"></div><div class="navt2">contact</div><a href="http://url.com"><div class="c2"></div></a></div><!--nav1-->
+<div id="nav3"><div class="cov"></div><div class="navt3">memories</div><a href="http://url.com"><div class="c3"></div></a></div><!--nav1-->
+
+<div class="desc">"It's also a servant's duty to make sure his master behaves properly am I right?"<br />
+━━━━━━━━━━━━━━━ 出ておいで<br />
+- Nicolás | 23 yo | CL<br />
+- Summon Jabberwock 2 times a day for 10 minutes with deduce abilities<br />
+- Wooden sword with 'Elliot' written on it</div>
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+jQuery(".sub").hide();
+//toggle the componenet with class msg_body
+jQuery(".cthrough").click(function()
+{
+jQuery(this).next(".sub").slideToggle(); return false;
+});});
+</script>
+
+<a href="#" class="cthrough">explore ▽</a>
+<div class="sub">
+<a href="https://xat.me/flaminhotcheetos"><div class="link">Antonia</div></a>
+<a href="https://xat.me/WireWalker"><div class="link">Deansito</div></a>
+<a href="https://xat.me/LinkTheHylianHero"><div class="link">Merlo</div></a>
+<a href="https://xat.me/Clortsin"><div class="link">Clort</div></a>
+
+
+
+
+</div><!--sub-->
+
+
+
+
+<div class="pagination">
+
+</div>
+
+
+</div><!--main-->
+
+<div id="content">
+<div class="posts">
+
+
+ 
+
+ 
+
+ 
+
+<div class="photo">
+<img src="https://64.media.tumblr.com/02cdfed069c57f94a98147e32e7fa5c5/tumblr_pahu98EDMu1x6uh6so1_250.png" data-orig-height="245" data-orig-width="100" width="245" height="262" alt="image" />
+  <img src="https://64.media.tumblr.com/996f395a2c4d76db4451024f578b35ab/tumblr_pahu98EDMu1x6uh6so2_250.png" data-orig-height="245" data-orig-width="100" width="245" height="262" alt="image" />
+  
+  
+  <img src="https://64.media.tumblr.com/6eb538076c07530c7bb96dc23e758072/tumblr_pahu98EDMu1x6uh6so3_250.png" data-orig-height="245" data-orig-width="100" width="245" height="262" alt="image" />
+<img src="https://64.media.tumblr.com/6c0dd0e76519177a323a12d2e720c354/tumblr_pahu98EDMu1x6uh6so4_250.png" data-orig-height="245" data-orig-width="100" width="245" height="262" alt="image" />
+  
+  
+  <img src="https://64.media.tumblr.com/4e51bd94472e6e2d18c41b83d8371417/tumblr_pahu98EDMu1x6uh6so5_250.png" data-orig-height="245" data-orig-width="100" width="245" height="262" alt="image" />
+  
+  <img src="https://64.media.tumblr.com/9b50509c696b665a35798051adbd3ed7/tumblr_pahu98EDMu1x6uh6so6_250.png" data-orig-height="245" data-orig-width="100" width="245" height="262" alt="image" />
+
+</html>
+<!-- partial -->
+  
+</body>
+</html>
